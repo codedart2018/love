@@ -20,7 +20,11 @@
     <!-- Optional controls -->
   </swiper>
 </template>
-
+<style>
+  .swiper-slide {
+    /*height: 100px;*/
+  }
+</style>
 <script>
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
   export default {
@@ -36,7 +40,8 @@
           direction : 'vertical',
           grabCursor : true,
           setWrapperSize :true,
-          autoHeight: true,
+          height: window.innerHeight,
+          //autoHeight: true,
           //pagination : '.swiper-pagination', // <div class="swiper-pagination"  slot="pagination"></div>
           paginationClickable :true,
           //prevButton:'.swiper-button-prev', // <div class="swiper-button-prev" slot="button-prev"></div>
@@ -50,6 +55,7 @@
           // swiper callbacks
           // swiper的各种回调函数也可以出现在这个对象中，和swiper官方一样
           onTransitionStart(swiper){
+            //swiper.height = window.innerWidth + 'px'
             console.log(swiper)
           },
           // more Swiper configs and callbacks...
@@ -65,6 +71,8 @@
       }
     },
     mounted() {
+      //this.$el.querySelector(".swiper-slide").style.width = window.innerWidth + 'px'
+      //this.$el.querySelector(".swiper-slide").style.height = window.innerHeight + 'px'
       // you can use current swiper instance object to do something(swiper methods)
       // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
       console.log('this is current swiper instance object', this.swiper)
