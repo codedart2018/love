@@ -8,7 +8,8 @@
    > vue \
    > vue-router \
    > vuex \
-   > axios
+   > axios \
+   > vue-awesome-swiper
    
 ### 后端技术
 
