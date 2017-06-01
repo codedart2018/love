@@ -1,6 +1,16 @@
-# love
+# Vue ใครคือดวงตะวันของเธอ
 
-> 这是我用vue写的一个向喜欢的女孩表达的应用.
+> 我只想用代码把它写出来.不论最终怎么样，那么หัวใจ已动，行已动！那就写吧！
+> 正好也可以在项目中了解了解动画相关知识。
+
+### 前台技术:
+   > vue-cli \
+   > vue \
+   > vue-router \
+   > vuex \
+   > axios
+   
+### 后端技术
 
 ## Build Setup
 
@@ -8,7 +18,7 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:5021
 npm run dev
 
 # build for production with minification
